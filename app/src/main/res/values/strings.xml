@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">TP2</string>
+    <string name="title_activity_calculatrice">Calculatrice</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="editTextNumber1" />
+    <string name="editTextNumber2" />
+    <string name="textViewRESULTA">Resulta</string>
+
+    <string name="radioButtonMoins">Moins</string>
+    <string name="radioButtonDevise">Devise</string>
+    <string name="radioButtonPlus">Plus</string>
+    <string name="radioButtonMulti">Multi</string>
+
+    <string name="buttonRaz">RAZ</string>
+    <string name="buttonFerme">FERME</string>
+    <string name="buttonResulta">RESULTA</string>
+</resources>

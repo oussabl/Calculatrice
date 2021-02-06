@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculatrice">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.TP2.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/Theme.TP2.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FirstFragment">
+
+        <LinearLayout
+            android:id="@+id/linearButton"
+            android:layout_width="420dp"
+            android:layout_height="192dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/buttonResulta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonResulta" />
+
+            <Button
+                android:id="@+id/buttonRaz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/buttonRaz" />
+
+            <Button
+                android:id="@+id/buttonFerme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="48dp"
+                android:text="@string/buttonFerme"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearText"
+            android:layout_width="398dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="40dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/editTextNumber1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="add first num"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:ems="20"
+                android:hint="add second number"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutRadio"
+            android:layout_width="275dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearText">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radioButtonPlus"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/radioButtonPlus"
+                android:textSize="18sp"
+                android:checked="true"
+                android:textStyle="normal|bold" />
+                <!--   android:onClick="checkButton" -->
+
+            <RadioButton
+                android:id="@+id/radioButtonMoins"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="@string/radioButtonMoins"
+                android:textSize="18sp"
+                android:textStyle="normal|bold" />
+                <!--   android:onClick="checkButton" -->
+
+                <RadioButton
+                    android:id="@+id/radioButtonDevise"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/radioButtonDevise"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    />
+                <!--   android:onClick="checkButton" -->
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonMulti"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="@string/radioButtonMulti"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+                <!--   android:onClick="checkButton" -->
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewRESULTA"
+            android:layout_width="157dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/textViewRESULTA"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/linearButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layoutRadio" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
